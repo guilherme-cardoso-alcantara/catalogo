@@ -1,0 +1,103 @@
+:root {
+
+  /* ===== FONTES ===== */
+  --fonte-titulos: 'Arial', sans-serif;
+  --fonte-times: 'Verdana', sans-serif;
+  --fonte-padrao: 'Roboto', sans-serif;
+
+
+  /* ===== CORES ===== */
+  --cor-principal: #111;
+  --cor-secundaria: #00aaff;
+  --cor-base: #f4f4f4;
+
+}
+.cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #222;
+  padding: 15px;
+  color: white;
+}
+
+.logo {
+  width: 60px;
+}
+
+.nome-loja {
+  font-size: 24px;
+}
+
+.aviso-catalogo {
+  text-align: center;
+  border: 2px solid #ccc;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 850px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.aviso-catalogo h2 {
+  margin-bottom: 8px;
+}
+
+.aviso-catalogo p {
+  margin-bottom: 10px;
+}
+
+.botao-whatsapp {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.botao-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+
+.conteudo {
+  display: flex;
+  justify-content: center;
+  
+  gap: 5px;
+}
+
+.coluna {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+}
+
+.coluna h2 {
+  margin-bottom: 20px;
+}
+
+/* Botões */
+
+.botao {
+  display: block;
+  text-decoration: none;
+  background-color: #222;
+  color: white;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+
+.botao:hover {
+  background-color: #00aaff;
+  color: white;
+}
