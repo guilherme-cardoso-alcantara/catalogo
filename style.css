@@ -101,3 +101,76 @@
   background-color: #00aaff;
   color: white;
 }
+
+/* PAGINAS DOS CLUBES */
+/* RESET BÁSICO */
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+
+/* ===== TOPO ===== */
+
+.topo-time{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    padding:20px;
+    background-color:#fff;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nome-time{
+    font-size:28px;
+}
+
+
+/* BOTÃO VOLTAR */
+
+.botao-voltar img{
+    width:30px;
+    transition:0.3s;
+}
+
+.botao-voltar img:hover{
+    transform:scale(1.2);
+}
+
+
+/* ===== GALERIA ===== */
+
+.galeria-camisas{
+    max-width:1000px;
+    margin:40px auto;
+
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap:25px;
+
+    padding:20px;
+}
+
+
+/* CARD CAMISA */
+
+.camisa{
+    background:white;
+    padding:10px;
+    border-radius:8px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.camisa img{
+    width:100%;
+    border-radius:5px;
+}
+
+.camisa:hover{
+    transform:scale(1.05);
+}
+
