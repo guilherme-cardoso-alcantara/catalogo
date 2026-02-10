@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flamengo</title>
+<title>Cruzeiro</title>
 
-<link rel="stylesheet" href="../../../css/style.css">
+<link rel="stylesheet" href="/style.css">
 
 </head>
 
@@ -15,30 +15,47 @@
 <header class="topo-time">
 
   <a href="../../../catalogo.html" class="botao-voltar">
-    <img src="../../../img/seta-esquerda.png" alt="Voltar">
+    <img src="/imagens/seta.png" alt="Voltar">
   </a>
 
-  <h1 class="nome-time">Flamengo</h1>
+  <h1 class="nome-time">Cruzeiro</h1>
 
 </header>
-
-
 <!-- GALERIA -->
-<section class="galeria-camisas">
+  <section class="galeria-camisas">
 
-  <div class="camisa">
-    <img src="imagens/camisa1.jpg">
-  </div>
+    <div class="camisa">
+      <img src="cruzeiro-1.jpg" onclick="abrirImagem(this)">
+    </div>
 
-  <div class="camisa">
-    <img src="imagens/camisa2.jpg">
-  </div>
+    <div class="camisa">
+      <img src="cruzeiro-2.jpg" onclick="abrirImagem(this)">
+    </div>
 
-  <div class="camisa">
-    <img src="imagens/camisa3.jpg">
-  </div>
+    <div class="camisa">
+      <img src="cruzeiro-treino-manga.jpg" onclick="abrirImagem(this)">
+    </div>
 
-</section>
+  </section>
+      <div id="lightbox" onclick="fecharImagem()">
+        <img id="imagem-grande">
+     </div>
+
+  <script>
+
+    function abrirImagem(img){
+        const lightbox = document.getElementById("lightbox");
+        const imagemGrande = document.getElementById("imagem-grande");
+
+        imagemGrande.src = img.src;
+        lightbox.style.display = "flex";
+    }
+
+    function fecharImagem(){
+        document.getElementById("lightbox").style.display = "none";
+    }
+
+</script>
 
 </body>
 </html>
