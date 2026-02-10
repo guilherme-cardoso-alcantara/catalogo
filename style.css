@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 :root {
 
   /* ===== FONTES ===== */
-  --fonte-titulos: 'Arial', sans-serif;
+  --fonte-titulos: 'Oswald', sans-serif;
   --fonte-times: 'Verdana', sans-serif;
   --fonte-padrao: 'Roboto', sans-serif;
 
+  
+
 
   /* ===== CORES ===== */
-  --cor-principal: #26547C;
-  --cor-secundaria: #20A4F3;
-  --cor-base: #FFFCF2;
-  --cor-detalhes: #CCC5B9;
+  --cor-principal: #2D232E;
+  --cor-secundaria: #474448;
+  --cor-base: #F1F0EA;
+  --cor-detalhes: #E0DDCF;
   --cor-fonte: #594F3B;
 
 
@@ -21,7 +25,7 @@
   gap: 15px;
   background-color: var(--cor-principal);
   padding: 15px;
-  color: var(--cor-base);
+  color: var(--cor-detalhes);
 }
 
 .logo {
@@ -29,43 +33,53 @@
 }
 
 .nome-loja {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .aviso-catalogo {
   text-align: center;
-  border: 3px solid var(--cor-principal);
+  border: 2px solid var(--cor-principal);
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
   padding: 15px;
   margin: 20px auto;
   max-width: 850px;
   border-radius: 8px;
   background-color: var(--cor-base);
   color: var(--cor-fonte);
+  font-family: var(--fonte-padrao);
 }
 
 .aviso-catalogo h2 {
-  margin-bottom: 8px;
+  margin: 10px 0px 10px 0px;
+  font-family: var(--fonte-titulos);
+  font-weight: bolder;
+  font-size: 1.5em;
 
 }
 
 .aviso-catalogo p {
   margin-bottom: 10px;
+  font-family: var(--fonte-padrao);
 
 }
 
 .botao-whatsapp {
   display: inline-block;
-  padding: 6px 14px;
-  background-color: var(--cor-principal);
-  color: white;
+  padding: 10px 10px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-base);
   text-decoration: none;
   border-radius: 5px;
   font-size: 14px;
   transition: 0.3s;
+  margin: 10px 0px 15px 0px;
+  font-family: var(--fonte-padrao);
 }
 
 .botao-whatsapp:hover {
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-principal);
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 
@@ -82,13 +96,20 @@
   border-radius: 8px;
   width: 250px;
   text-align: center;
-  border: 3px solid var(--cor-principal);
+  border: 2px solid var(--cor-principal);
+  font-size: 1em;
   
 }
 
 .coluna h2 {
   margin-bottom: 20px;
   color: var(--cor-fonte);
+  font-family: var(--fonte-titulos);
+  font-size: 1.3em;
+  background-color: var(--cor-detalhes);
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.418);
 }
 
 /* Botões */
@@ -96,19 +117,24 @@
 .botao {
   display: block;
   text-decoration: none;
-  background-color: var(--cor-principal);
+  background-color: var(--cor-secundaria);
   color: var(--cor-base);
   padding: 10px;
   margin: 8px 0;
   border-radius: 5px;
   transition: 0.3s;
+  font-family: var(--fonte-titulos);
+  font-size: 1em;
+
 }
 
 /* Efeito ao passar o mouse */
 
 .botao:hover {
-  background-color: var(--cor-secundaria);
+  background-color: var(--cor-principal);
   color: white;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* PAGINAS DOS CLUBES */
@@ -117,32 +143,42 @@
 body{
     margin:0;
     font-family: Arial, sans-serif;
-    background-color: var(--cor-base);
+    background-color: var(--cor-detalhes);
 }
+
+
 
 
 /* ===== TOPO ===== */
 
 .topo-time{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:15px;
-    padding:20px;
-    background-color: var(--cor-principal);
-    box-shadow:0 2px 5px rgba(0,0,0,0.1);
-    color: var(--cor-base);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap: 15px;
+  background-color: var(--cor-principal);
+  box-shadow:0px 2px 5px rgba(0,0,0,0.1);
+  font-family: var(--fonte-padrao);
+  font-size: 1.5em;
+  color: var(--cor-base);
 }
 
-.nome-time{
-    font-size:28px;
+.titulo-time{
+  display: flex;
+  align-items: center;
+}
+
+.titulo-time h1 {
+  margin: 0;
+  line-height: 1;
 }
 
 
 /* BOTÃO VOLTAR */
 
 .botao-voltar img{
-    width:30px;
+    width:auto;
+    display: block;
     transition:0.3s;
 }
 
@@ -167,21 +203,48 @@ body{
 
 /* CARD CAMISA */
 
+body .pagina-time {
+  background-color: var(--cor-secundaria);
+}
+
 .camisa{
-    background:var(--cor-detalhes);
+    background:var(--cor-base);
     padding:10px;
     border-radius:8px;
     box-shadow:0 2px 6px rgba(0,0,0,0.1);
     transition:0.3s;
+    position: relative;
 }
 
 .camisa img{
     width:100%;
     border-radius:5px;
+    display: block;
 }
 
 .camisa:hover{
-    transform:scale(1.05);
+    transform:scale(1.08);
+}
+.texto-hover{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    font-family: var(--fonte-padrao);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    text-align: center;
+    padding: 8px;
+
+    opacity: 0;
+    transition: 0.3s;
+
+    box-sizing: border-box;
+}
+
+.camisa:hover .texto-hover{
+    opacity: 1;
 }
 
 /* LIGHTBOX */
