@@ -3,42 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flamengo</title>
+<title>Atletico-MG</title>
 
-<link rel="stylesheet" href="../../../css/style.css">
+<link rel="stylesheet" href="/style.css">
 
 </head>
 
-<body>
+<body class="pagina-time">
 
 <!-- TOPO -->
 <header class="topo-time">
+  <img src="/imagens/logo.png" alt="Logo da loja" class="logo-paginas">
 
-  <a href="../../../catalogo.html" class="botao-voltar">
-    <img src="../../../img/seta-esquerda.png" alt="Voltar">
-  </a>
-
-  <h1 class="nome-time">Flamengo</h1>
-
+  <div class="titulo-time">
+    <a href="../../../catalogo.html" class="botao-voltar">
+      <img src="/imagens/seta.png"  alt="Voltar">
+    </a>
+    <h1>Atletico-MG</h1>
+  </div>
 </header>
-
-
 <!-- GALERIA -->
-<section class="galeria-camisas">
+  <section class="galeria-camisas">
 
-  <div class="camisa">
-    <img src="imagens/camisa1.jpg">
+    <div class="camisa">
+      <img src="camisa-1.jpg" onclick="abrirImagem(this)">
+      <div class="texto-hover">
+        Camisa 1 Temporada 25
+      </div>
+    </div>
+
+    <div class="camisa">
+      <img src="camisa-2.jpg" onclick="abrirImagem(this)">
+      <div class="texto-hover">
+        Camisa 2 Temporada 25
+      </div>
+    </div>
+
+    <div class="camisa">
+      <img src="camisa-3.jpg" onclick="abrirImagem(this)">
+      <div class="texto-hover">
+        Camisa 3 Temporada 25
+      </div>
+    </div>
+
+    <div class="camisa">
+      <img src="camisa-treino.jpg" onclick="abrirImagem(this)">
+      <div class="texto-hover">
+        Camisa Treino Temporada 26
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="aviso-catalogo">
+
+            <h2>Não achou o que procura?</h2>
+            <p>
+                Confira disponibilidade de outros modelos! 
+            </p>
+            
+            <a href="https://wa.me/+5538984351328" class="botao-whatsapp" target="_blank">
+                WhatsApp
+            </a>
+            <p>
+                Temos também: camisa versão jogador, modelos femininos, infatis, retrôs, manga longa, uniforme de goleiro, etc. 
+            </p>
+        </section>
+
+  <div id="lightbox" onclick="fecharImagem()">
+    <img id="imagem-grande">
   </div>
 
-  <div class="camisa">
-    <img src="imagens/camisa2.jpg">
-  </div>
+  <script>
 
-  <div class="camisa">
-    <img src="imagens/camisa3.jpg">
-  </div>
+    function abrirImagem(img){
+        const lightbox = document.getElementById("lightbox");
+        const imagemGrande = document.getElementById("imagem-grande");
 
-</section>
+        imagemGrande.src = img.src;
+        lightbox.style.display = "flex";
+    }
+
+    function fecharImagem(){
+        document.getElementById("lightbox").style.display = "none";
+    }
+
+
+</script>
 
 </body>
 </html>
