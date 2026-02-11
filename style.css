@@ -29,7 +29,8 @@
 }
 
 .logo {
-  width: 60px;
+  width: 100px;
+  height: auto;
 }
 
 .nome-loja {
@@ -65,7 +66,7 @@
 
 .botao-whatsapp {
   display: inline-block;
-  padding: 10px 10px;
+  padding: 10px 20px;
   background-color: var(--cor-secundaria);
   color: var(--cor-base);
   text-decoration: none;
@@ -137,40 +138,45 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
+
+
 /* PAGINAS DOS CLUBES */
 /* RESET BÁSICO */
 
 body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    background-color: var(--cor-detalhes);
+  margin:0;
+  font-family: Arial, sans-serif;
+  background-color: var(--cor-detalhes);
 }
 
-
-
-
 /* ===== TOPO ===== */
-
 .topo-time{
+  position: relative;
   display:flex;
   align-items:center;
   justify-content:center;
   gap: 15px;
   background-color: var(--cor-principal);
-  box-shadow:0px 2px 5px rgba(0,0,0,0.1);
-  font-family: var(--fonte-padrao);
-  font-size: 1.3em;
-  color: var(--cor-base);
+  box-shadow:0px 2px 5px rgba(0,0,0,0.1); 
+  height: 70px;
+  padding: 5px;
+}
+
+.logo-paginas{
+  position: absolute;
+  align-items: center;
+  left: 15px;
+  width: 100px;
+  height: auto;
 }
 
 .titulo-time{
   display: flex;
   align-items: center;
-}
-
-.titulo-time h1 {
-  margin: 0;
-  line-height: 1;
+  gap: 10px;
+  color: var(--cor-base);
+  font-size: 1.5em;
+  font-family: var(--fonte-times);
 }
 
 
