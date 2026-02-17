@@ -31,7 +31,7 @@
 }
 
 .logo {
-  width: 100px;
+  width: 80px;
   height: auto;
 }
 
@@ -92,6 +92,7 @@
   justify-content: center;
   gap: 5px;
   padding: 0 10px;
+  flex: 1;
 }
 
 .coluna {
@@ -144,6 +145,20 @@
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
+.rodape {
+    background-color: var(--cor-principal);
+    margin-top: 20px;
+}
+
+.texto-rodape {
+  font-family: var(--fonte-padrao);
+  font-size: clamp(8px, 1vw, 12px);
+  color: var(--cor-detalhes);
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
+
 
 
 /* PAGINAS DOS CLUBES */
@@ -153,6 +168,9 @@ body{
   margin:0;
   font-family: Arial, sans-serif;
   background-color: var(--cor-detalhes);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* ===== TOPO ===== */
@@ -165,7 +183,8 @@ body{
   background-color: var(--cor-principal);
   box-shadow:0px 2px 5px rgba(0,0,0,0.1); 
   height: 70px;
-  padding: 5px;
+  padding: 50px;
+  
 }
 
 .logo-paginas{
