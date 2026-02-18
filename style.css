@@ -85,21 +85,24 @@
   transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-
+.pagina{
+  flex: 1;
+}
 
 .conteudo {
+  
   display: flex;
   justify-content: center;
   gap: 5px;
   padding: 0 10px;
   flex: 1;
+  align-items: stretch; /* mantém mesma altura */
 }
 
 .coluna {
   background-color: var(--cor-base);
   padding: 10px;
   border-radius: 8px;
-  width: 98%;
   max-width: 250px;
   min-width: 0;
   flex: 1;
@@ -152,7 +155,7 @@
 
 .texto-rodape {
   font-family: var(--fonte-padrao);
-  font-size: clamp(8px, 1vw, 12px);
+  font-size: clamp(10px, 1vw, 12px);
   color: var(--cor-detalhes);
   margin: 0;
   text-align: center;
