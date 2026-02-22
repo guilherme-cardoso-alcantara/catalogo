@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
 
 :root {
 
@@ -7,6 +8,7 @@
   --fonte-titulos: 'Oswald', sans-serif;
   --fonte-times: 'Zain', sans-serif;
   --fonte-padrao: 'Roboto', sans-serif;
+  --fonte-header: 'Cormorant Garamond', sans-serif;
 
   
 
@@ -29,15 +31,18 @@
   background-color: var(--cor-principal);
   padding: 15px;
   color: var(--cor-secundaria);
+  
 }
 
 .logo {
-  width: 50px;
+  width: clamp(50px, 20vw, 100px);
   height: auto;
 }
 
 .nome-loja {
-  font-size: 28px;
+  font-size: clamp(18px, 4vw, 30px);
+  font-family: var(--fonte-header);
+  letter-spacing: 0.2em;
 }
 
 .aviso-catalogo {
@@ -64,6 +69,9 @@
 
 .aviso-catalogo p {
   margin-bottom: 10px;
+  text-align: center;
+  
+  line-height: 1.5em;
   font-family: var(--fonte-padrao);
 
 }
@@ -199,8 +207,9 @@ body{
   position: absolute;
   align-items: center;
   left: 15px;
-  width: 50px;
+  width: clamp(50px, 20vw, 100px);
   height: auto;
+  padding: 10px;
 }
 
 .titulo-time{
