@@ -1,21 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
 
 :root {
 
   /* ===== FONTES ===== */
   --fonte-titulos: 'Oswald', sans-serif;
-  --fonte-times: 'Verdana', sans-serif;
+  --fonte-times: 'Zain', sans-serif;
   --fonte-padrao: 'Roboto', sans-serif;
 
   
 
 
   /* ===== CORES ===== */
-  --cor-principal: #2D232E;
-  --cor-secundaria: #474448;
-  --cor-base: #F1F0EA;
-  --cor-detalhes: #E0DDCF;
-  --cor-fonte: #594F3B;
+  --cor-principal: #012853;
+  --cor-secundaria: #e7c78c;
+  --cor-base: white;
+  --cor-detalhes: #d6d3d4;
+  --cor-fonte: #e7c78c;
 *{
   box-sizing: border-box;
 }
@@ -27,11 +28,11 @@
   gap: 15px;
   background-color: var(--cor-principal);
   padding: 15px;
-  color: var(--cor-detalhes);
+  color: var(--cor-secundaria);
 }
 
 .logo {
-  width: 80px;
+  width: 50px;
   height: auto;
 }
 
@@ -49,7 +50,7 @@
   max-width: 825px;
   border-radius: 8px;
   background-color: var(--cor-base);
-  color: var(--cor-fonte);
+  color: var(--cor-principal);
   font-family: var(--fonte-padrao);
 }
 
@@ -70,8 +71,8 @@
 .botao-whatsapp {
   display: inline-block;
   padding: 10px 20px;
-  background-color: var(--cor-secundaria);
-  color: var(--cor-base);
+  background-color: var(--cor-principal);
+  color: var(--cor-secundaria);
   text-decoration: none;
   border-radius: 5px;
   font-size: 14px;
@@ -90,7 +91,6 @@
 }
 
 .conteudo {
-  
   display: flex;
   justify-content: center;
   gap: 5px;
@@ -108,16 +108,21 @@
   flex: 1;
   text-align: center;
   border: 2px solid var(--cor-principal);
-  font-size: 1em;
   
+    
+}
+
+.coluna a {
+  font-family: var(--fonte-times);
+  font-size: 1em;
 }
 
 .coluna h2 {
   margin-bottom: 20px;
-  color: var(--cor-fonte);
+  color: var(--cor-secundaria);
   font-family: var(--fonte-titulos);
   font-size: 1.3em;
-  background-color: var(--cor-detalhes);
+  background-color: var(--cor-principal);
   border-radius: 5px;
   padding: 5px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.418);
@@ -156,7 +161,7 @@
 .texto-rodape {
   font-family: var(--fonte-padrao);
   font-size: clamp(10px, 1vw, 12px);
-  color: var(--cor-detalhes);
+  color: var(--cor-secundaria);
   margin: 0;
   text-align: center;
   padding: 10px;
@@ -194,7 +199,7 @@ body{
   position: absolute;
   align-items: center;
   left: 15px;
-  width: 80px;
+  width: 50px;
   height: auto;
 }
 
@@ -237,8 +242,8 @@ body{
 
 /* CARD CAMISA */
 
-body .pagina-time {
-  background-color: var(--cor-secundaria);
+.pagina-time {
+  background-color: var(--cor-detalhes);
 }
 
 .camisa{
